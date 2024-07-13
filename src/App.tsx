@@ -303,6 +303,7 @@ function App() {
                         <FormGroup>
                             <Button disabled={loading} onClick={() => {
                                 handlePatchDocument().then(r => {
+                                    console.log(r);
                                 });
                             }}>{loading?"Generating":"Generate"}
                                 {loading && <Spinner className={"ms-3"} animation="border" role="status" size={"sm"}>
@@ -319,25 +320,25 @@ function App() {
 
 export default App;
 
-const sample = {
-    paminilikaru:"පැමිණිලි කරු",
-    withthikaru:"විත්ති කරු",
-    nayakaru:"විත්ති කරු",
-    apakarueka:"ඇපකරු 01",
-    apakarudeka:"ඇපකරු 02",
-    nayakarugelipinaya:"ණයකරුගේ ලිපිනය,\nණයකරුගේ ලිපිනය",
-    apakaruekalipinaya:"ඇපකරුගේ (01) ලිපිනය,\nඇපකරුගේ (01) ලිපිනය",
-    apakarudekalipinaya:"ඇපකරුගේ (02) ලිපිනය,\nඇපකරුගේ (02) ලිපිනය",
-    nayamudala:"ණය මුදල",
-    berumkarugename:"බේරුම් කරුගේ නම",
-    berumkarugelipinaya:"බේරුම් කරුගේ ලිපිනය,\nබේරුම් කරුගේ ලිපිනය",
-    sahakarakomasaris:"සහකාර කොමසාරිස්ගේ නම",
-    paminillelipinaya :"පැමිණිලිකරුගේ ලිපිනය",
-    polimudala:"පෝලී මුදල",
-    polimudala1:"පෝලී මුදල 01",
-    arwulankaya:"ආරවුල් අංකය",
-    berumkaranweyadm:"බේරුම්කරණ වියදම්",
-    mulumudala:"මුළු මුදල",
-    poliprthshathya:"පොලී ප්‍රතිශතය",
-    paminilieneyonamalipikhya:"පැමිණිල්ලේ නියෝ.නම හා ලිපිනය,\nපැමිණිල්ලේ නියෝ.නම හා ලිපිනය",
-}
+// const sample = {
+//     paminilikaru:"පැමිණිලි කරු",
+//     withthikaru:"විත්ති කරු",
+//     nayakaru:"විත්ති කරු",
+//     apakarueka:"ඇපකරු 01",
+//     apakarudeka:"ඇපකරු 02",
+//     nayakarugelipinaya:"ණයකරුගේ ලිපිනය,\nණයකරුගේ ලිපිනය",
+//     apakaruekalipinaya:"ඇපකරුගේ (01) ලිපිනය,\nඇපකරුගේ (01) ලිපිනය",
+//     apakarudekalipinaya:"ඇපකරුගේ (02) ලිපිනය,\nඇපකරුගේ (02) ලිපිනය",
+//     nayamudala:"ණය මුදල",
+//     berumkarugename:"බේරුම් කරුගේ නම",
+//     berumkarugelipinaya:"බේරුම් කරුගේ ලිපිනය,\nබේරුම් කරුගේ ලිපිනය",
+//     sahakarakomasaris:"සහකාර කොමසාරිස්ගේ නම",
+//     paminillelipinaya :"පැමිණිලිකරුගේ ලිපිනය",
+//     polimudala:"පෝලී මුදල",
+//     polimudala1:"පෝලී මුදල 01",
+//     arwulankaya:"ආරවුල් අංකය",
+//     berumkaranweyadm:"බේරුම්කරණ වියදම්",
+//     mulumudala:"මුළු මුදල",
+//     poliprthshathya:"පොලී ප්‍රතිශතය",
+//     paminilieneyonamalipikhya:"පැමිණිල්ලේ නියෝ.නම හා ලිපිනය,\nපැමිණිල්ලේ නියෝ.නම හා ලිපිනය",
+// }
